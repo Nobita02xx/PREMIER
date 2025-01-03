@@ -11,14 +11,14 @@
  #main{
     width: 100%;
     height: 100%;
-    padding:20px;
-    background-color: white;
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
  #nav{
     display: flex;
     height: 5rem;
-    background-color:white;
+    background-color:rgb(255, 255, 255);
     justify-content: space-between;
     border: 2px solid black;
  }
@@ -33,11 +33,12 @@
  }
  #log h1::after{
     content: "c";
-    font-size: 1vw;
+    font-size: 1.2vw;
     font-weight: 500;
     height: 12px;
     width: 12px;
-    padding-bottom: 6px;
+    padding-bottom: 7px;
+    padding-right: 1px;
     padding-left: 3px;
     border: 2px solid black;
     border-radius: 50%;
@@ -58,7 +59,7 @@
     padding-right: 30px;
  }
  #top_right h1{
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     height: 5rem;
     border-right: 2px solid black;
     align-content: center;
@@ -71,4 +72,45 @@
     width: 30px;
     margin-top: 30px;
     margin-right: 70px;
+ }
+ #center{
+    height: 90%;
+    width: 95%;
+    padding-left: 60px;
+    padding-top: 30px;
+    position: relative;
+    background-color: rgb(240, 237, 233);
+ }
+ #center video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+ }
+ #video_center{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+ }
+ #video_center h1{
+   color: white;
+   padding: 70px;
+   font-size: 3vw;
+   margin-top: 30%;
+   margin-left: 40px ;
+ }
+ #video_center h5{
+    color: white;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 20px;
+    margin-right: 80px;
+    font-size: 1.5vw;
+    margin-top: 35%;
  }
