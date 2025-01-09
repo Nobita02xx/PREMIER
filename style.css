@@ -12,7 +12,7 @@
     width: 100%;
     height: 100%;
     padding-top: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(179, 132, 132);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
  #nav{
@@ -112,5 +112,42 @@
     padding: 20px;
     margin-right: 80px;
     font-size: 1.5vw;
-    margin-top: 35%;
+    margin-top: 30%;
+ }
+ #scroll{
+   background-color: aquamarine;
+   width: 100%;
+   height: 35%;
+   white-space: nowrap;
+   overflow-x: hidden;
+   overflow-y: hidden;
+ }
+ #container {
+   display: inline-block;
+   padding: 2vw;
+   background-color: bisque;
+   width: 100%;
+   height: 110%;
+   object-position: top;
+   animation-name: anime;
+   animation-duration: 10s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+ }
+ #container img{
+   background-color: bisque;
+   width: 15%;
+   height: 95%;
+   object-fit: cover;
+   margin: 1vw;
+   object-position: top;
+   border-radius: 100%;
+ }
+ @keyframes anime {
+   from{
+      transform: translateX(0%);
+   }
+   to{
+      transform: translateX(-100%);
+   }
  }
