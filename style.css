@@ -12,7 +12,7 @@
     width: 100%;
     height: 100%;
     padding-top: 20px;
-    background-color: rgb(179, 132, 132);
+    background-color:white;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  }
  #nav{
@@ -20,7 +20,8 @@
     height: 5rem;
     background-color:rgb(255, 255, 255);
     justify-content: space-between;
-    border: 2px solid black;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
  }
  #nav h1{
     align-content: center;
@@ -79,7 +80,7 @@
     padding-left: 60px;
     padding-top: 30px;
     position: relative;
-    background-color: rgb(240, 237, 233);
+    background-color: white;
  }
  #center video{
     width: 100%;
@@ -93,29 +94,56 @@
     justify-content: space-between;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
+    margin-left: 90px;
+    margin-top: 28% ;
+    height: 20%;
+    width: 92%;
+    background-color: transparent;
+    border-bottom: 2px solid white;
  }
  #video_center h1{
    color: white;
-   padding: 70px;
    font-size: 3vw;
-   margin-top: 30%;
-   margin-left: 40px ;
  }
  #video_center h5{
     color: white;
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    border: 2px solid white;
-    padding: 20px;
-    margin-right: 80px;
+    border: 3px solid white;
+    padding: 18px;
+    margin-right: 1px;
     font-size: 1.5vw;
-    margin-top: 30%;
+    font-weight: 300;
+ }
+ #explore{
+   position: absolute;
+   display: flex;
+   justify-content: space-between;
+   top: 0;
+   left: 0;
+   margin-left: 90px;
+   margin-top: 38%;
+   height: 7%;
+   width: 92%;
+}
+#explore h1{
+   color: white;
+   font-size: 20px;
+   font-weight: 300;
+ }
+ #explore i{
+   color: white;
+   width: 3.6%;
+   height: 100%;
+   font-size: 3rem;
+   font-weight: 100;
+   display: inline-block;
  }
  #scroll{
-   background-color: aquamarine;
+   background-color: white;
+   margin-top: 2vw;
+   margin-bottom: 2vw;
    width: 100%;
    height: 35%;
    white-space: nowrap;
@@ -124,10 +152,8 @@
  }
  #container {
    display: inline-block;
-   padding: 2vw;
-   background-color: bisque;
    width: 100%;
-   height: 110%;
+   height: 100%;
    object-position: top;
    animation-name: anime;
    animation-duration: 10s;
@@ -135,13 +161,12 @@
    animation-timing-function: linear;
  }
  #container img{
-   background-color: bisque;
-   width: 15%;
-   height: 95%;
+   width: 12%;
+   height: 70%;
    object-fit: cover;
    margin: 1vw;
    object-position: top;
-   border-radius: 100%;
+   border-radius: 70%;
  }
  @keyframes anime {
    from{
@@ -150,4 +175,89 @@
    to{
       transform: translateX(-100%);
    }
+ }
+ #search{
+   margin-top: -50px;
+   padding-left: 80px;
+   padding-top: 1%;
+   padding-right: 80px;
+   height: 9%;
+   display: flex;
+   justify-content: space-between;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+   background-color: white;
+ }
+ #search h3{
+   text-transform: uppercase;
+   font-family: 'Courier New', Courier, monospace;
+   background-color: white;
+   color: rgb(122, 119, 115);
+   font-size: 20px;
+   font-weight: 550;
+ }
+ #search h3:hover {
+   content: " ";
+   background-color: white;
+   display: block;
+   font-weight: 700;
+   width: 25px;
+   height: 25px;
+   padding-left: 4px ;
+   padding-bottom: 20px;
+   border-radius: 50%;
+   border: 2px solid black;
+}
+#search h2{
+   font-size: 20px;
+   color: rgb(93, 90, 86);
+ text-decoration: underline;
+}
+ #main_content{
+   display: flex;
+   background-color: white;
+   height: 87%;
+ }
+ #left_content {
+   width: 51%;
+   padding-left: 60px;
+   padding-top: 30px;
+ 
+ }
+ #left_content img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+ }
+ #right_content{
+   width: 44%;
+   padding-left: 25px;
+   padding-top: 30px;
+   background-color: white;
+ }
+ #image_link {
+   background-color: white;
+   height: 80%;
+ }
+ #image_link img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   object-position: bottom;
+ }
+ #right_content #bottom{
+   background-color: white;
+   padding-top: 10px;
+   height: 20%;
+   width: 100%;
+   display: flex;
+   gap: 4rem;
+ }
+ #right_content #bottom h1{
+   font-size: 25px;
+  
+ }
+ #right_content #bottom p{
+   font-size: 15px;
+   line-height: 1.3vw;
  }
